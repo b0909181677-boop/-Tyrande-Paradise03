@@ -352,7 +352,7 @@
 
     const fortPeatDefaults = [
         { name: "Love in the Air(愛在空氣中)", note: "9分\n第八集開始 NC超讚!超有感覺!福福的總裁 桃桃的男大都好香\n兩人有虐有甜!小說的肉真的...很頂!\n番外兩對CP的肉...ㄚㄚㄚ啊!" },
-        { name: "海洋之戀/Love Sea", note: "7分\n桃桃的作家好精緻!純慾風玩得明明白白~\n後面的情節有點虐但演得很好!\n番外超香超甜" }
+        { name: "海洋之戀/Love Sea", note: "7分\n桃桃的作家好精緻!純慾風玩得明明白白~\n後面的情節有點虐點但演得很好!\n番外超香超甜" }
     ];
 
     const otherDefaults = [
@@ -369,7 +369,8 @@
         { name: "Leap Day/閨日奪魂", note: "小麵包滾寶主演的懸疑劇" },
         { name: "程心程意", note: "" },
         { name: "原來誓你", note: "" },
-        { name: "被最想擁抱的男人給威脅了", note: "8分\n日漫改編 兩位顏值演技再線\n把一開始的強迫劇情改成慢慢曖昧這點很讚!" }
+        { name: "被最想擁抱的男人給威脅了", note: "8分\n日漫改編 兩位顏值演技再線\n把一開始的強迫劇情改成慢慢曖昧這點很讚!" },
+        { name: "靈魂重生", note: "9分\n認識了新的CP!肯南平!\n肯超級帥的!南平笑起來是白月光等級~\n是有關因果輪迴前世今生的故事。\n每個人的人設都挺好的、演技也不錯!" }
     ];
 
     let notebookData = JSON.parse(localStorage.getItem(STORAGE_KEY));
@@ -390,6 +391,7 @@
             else if (tag === "First&Khaotung") notebookData[tag] = [...fkDefaults];
             else if (tag === "Gemini&Fourth") notebookData[tag] = [...gfDefaults];
             else if (tag === "Perth&Chimon") notebookData[tag] = [...pcDefaults];
+            else if (tag === "William&Est") notebookData[tag] = [...abDefaults]; // 使用 AouBoom 的預設
             else if (tag === "Mile&Apo") notebookData[tag] = [...maDefaults];
             else if (tag === "福桃") notebookData[tag] = [...fortPeatDefaults];
             else if (tag === "其他") notebookData[tag] = [...otherDefaults];
@@ -397,7 +399,7 @@
         });
     }
 
-    let currentTag = "其他"; 
+    let currentTag = "Force&Book"; 
     let editingDramaIndex = -1;
 
     function init() {
